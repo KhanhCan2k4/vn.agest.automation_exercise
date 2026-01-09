@@ -1,23 +1,35 @@
 export class Selection {
-    private testcaseId: string;
-    private levelName: string;
-    private isChecked: boolean;
+    private _testcaseId: string;
+    private _levelName: string;
+    private _isChecked: boolean;
     
     constructor(testcaseId: string, levelName: string, isChecked: boolean) {
-        this.testcaseId = testcaseId;
-        this.levelName = levelName;
-        this.isChecked = isChecked;
+        this._testcaseId = testcaseId;
+        this._levelName = levelName;
+        this._isChecked = isChecked;
     }
 
     public get testcaseID(): string {
-        return this.testcaseId;
+        return this._testcaseId;
     }
 
     public get level(): string {
-        return this.levelName;
+        return this._levelName;
     }
 
     public get isSelected(): boolean {
-        return this.isChecked;
+        return this._isChecked;
+    }
+
+    public set testcaseID(value: string) {
+        this._testcaseId = value;
+    }
+
+    public set level(value: string) {
+        this._levelName = value;
+    }
+
+    public set isSelected(value: boolean) {
+        this._isChecked = value;
     }
 }
