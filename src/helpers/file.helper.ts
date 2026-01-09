@@ -43,7 +43,7 @@ export class FileHelper {
     try {
       let csvString = data
         .map((row) => {
-          return row.join(";") + "\n";
+          return row.join(",") + "\n";
         })
         .join("");
 

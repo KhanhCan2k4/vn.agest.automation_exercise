@@ -4,6 +4,6 @@
   "targetFolder": "data",
   "targetTestCaseFileName": "testcases",
   "targetSelectTestcaseName": "select_testcase",
-  "mainTitle": "Test Case ID",
+  "mainTitle": "TestCaseID",
   "selectSymbol": "X"
 }

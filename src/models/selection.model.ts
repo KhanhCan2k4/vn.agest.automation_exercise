@@ -1,12 +1,12 @@
 export class Selection {
     private _testcaseId: string;
     private _levelName: string;
-    private _isChecked: boolean;
+    private _isSelected: boolean;
     
-    constructor(testcaseId: string, levelName: string, isChecked: boolean) {
+    constructor(testcaseId: string, levelName: string, isSelected: boolean) {
         this._testcaseId = testcaseId;
         this._levelName = levelName;
-        this._isChecked = isChecked;
+        this._isSelected = isSelected;
     }
 
     public get testcaseID(): string {
@@ -18,7 +18,7 @@ export class Selection {
     }
 
     public get isSelected(): boolean {
-        return this._isChecked;
+        return this._isSelected;
     }
 
     public set testcaseID(value: string) {
@@ -30,6 +30,6 @@ export class Selection {
     }
 
     public set isSelected(value: boolean) {
-        this._isChecked = value;
+        this._isSelected = value;
     }
 }
