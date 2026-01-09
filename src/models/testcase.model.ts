@@ -3,10 +3,10 @@ export class TestCase {
   private _name: string;
   private _content: string;
 
-  constructor() {
-    this._id = "";
-    this._name = "";
-    this._content = "";
+  constructor(object: any) {
+    this._id = object.id ?? "";
+    this._name = object.name ?? "";
+    this._content = object.content ?? "";
   }
 
   public set id(value: string) {
@@ -31,5 +31,15 @@ export class TestCase {
       name: this._name,
       content: this._content,
     };
+  }
+
+  public toString(): string {
+    return `--------------------------------------------------------------------------------------------------------------\n
+| Test Case ID:\t\t${this._id}\n
+| Test Name:\t\t${this._name}\n
+| Steps:\n
+${this._content}
+--------------------------------------------------------------------------------------------------------------
+    `;
   }
 }
