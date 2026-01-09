@@ -12,10 +12,7 @@ const selectionPath = join(
 
 const selections = selectionHelper.convertCsvToSelection(selectionPath);
 
-const checkedSelections = selectionHelper.getCheckedSelectionsByLevel(
-  selections,
-  inputData.filterLevel
-);
+const checkedSelections = selectionHelper.getCheckedSelections(selections);
 
 const testCases = selectionHelper.getTestcaseByLevel(
   checkedSelections,

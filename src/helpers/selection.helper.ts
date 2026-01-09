@@ -35,13 +35,23 @@ export class SelectionHelper {
   }
 
   getTestcaseByLevel(selections: Selection[], levelName: string): TestCase[] {
-    const testcases: TestCase[] = [];
+    selections = this.getCheckedSelections(selections);
+    const filter = selections.filter(
+      (selection) => selection.level === levelName
+    );
+    const testcases = inputTestCases.map((testcase) => new TestCase(testcase));
 
-    inputTestCases.forEach((testCase) => {
-      testcases.push(new TestCase(testCase));
-    });
+    const result: TestCase[] = [];
 
-    const testcaseIds = selections.map((selection) => selection.testcaseID);
-    return testcases.filter((testcase) => testcaseIds.includes(testcase.id));
+    for (const item of filter) {
+      const testcaseData = testcases.find(
+        (tc: TestCase) => tc.id === item.testcaseID
+      );
+      if (testcaseData) {
+        result.push(testcaseData);
+      }
+    }
+
+    return result;
   }
 }
