@@ -5,7 +5,7 @@ class App {
     constructor() {
         // const csv = new CSV();
         // console.log(csv.ReadCSV('./data/random_levels.csv'));
-        const selection = new SelectionHelper().convertCsvToSelection('./data/testcases.csv');
+        const selection = new SelectionHelper().convertCsvToSelection('./data/select_testcase.csv');
         console.log(selection);
 
         // console.log(new Selection());
