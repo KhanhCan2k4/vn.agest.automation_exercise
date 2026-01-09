@@ -37,7 +37,7 @@ export class SelectionHelper {
   getTestcaseByLevel(selections: Selection[], levelName: string): TestCase[] {
     selections = this.getCheckedSelections(selections);
     const filter = selections.filter(
-      (selection) => selection.level === levelName
+      (selection) => selection.levelName === levelName
     );
     const testcases = inputTestCases.map((testcase) => new TestCase(testcase));
 
