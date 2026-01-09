@@ -1,6 +1,6 @@
-Test Case ID,Level 1,Level 2,Level 3,Level 4,Level 5
-TC1
-TC2
+TestCaseID,Level 1,Level 2,Level 3,Level 4,Level 5
+TC1,X
+TC2,,X
 TC3
 TC4
 TC5

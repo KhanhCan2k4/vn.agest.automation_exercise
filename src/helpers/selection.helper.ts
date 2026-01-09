@@ -1,5 +1,4 @@
 import {readFileSync} from 'fs';
-import { parse } from "csv-parse/sync";
 import { Selection } from "../models/selection.model";
 import inputData from "../../data/input-data.json";
 import { TestCase } from '../models/testcase.model';
@@ -10,30 +9,25 @@ export class SelectionHelper {
 
         const fileContent = readFileSync(filePath, "utf-8");
 
-        const csvRows = parse<any>(fileContent, {
-            columns: true,
-            skip_empty_lines: true,
-            trim: true
-        });
-
         const selections: Selection[] = [];
 
-        for (const row of csvRows) {
-            const testcaseId: string = row[inputData.mainTitle];
+        const csvRows = fileContent.split('\n');
+        const headers = csvRows[0];
 
-            for (const [levelName, isChecked] of Object.entries(row)) {
-                if (levelName !== inputData.mainTitle){
-                    selections.push(
-                        new Selection(
-                            testcaseId,
-                            levelName,
-                            isChecked == inputData.selectSymbol
-                        )
-                    );
-                }
-                
+        csvRows.forEach((row, index) => {
+            if (index != 0){
+                headers.split(',').forEach((header, index) =>{
+                    if (index != 0){
+                        selections.push(new Selection(
+                            row.split(',')[0],
+                            header,
+                            row.split(',')[index] == inputData.selectSymbol
+                        ));
+                    }
+                });
             }
-        }
+        });
+        
         return selections;
     }
 
@@ -42,7 +36,7 @@ export class SelectionHelper {
             selection.level === levelName && selection.isSelected
         );
     }
-    
+
     getTestcaseByLevel(testcases: TestCase[],selections: Selection[], levelName: string): TestCase[] {
         const checkedSelections = this.getCheckedSelectionsByLevel(selections, levelName);
         const testcaseIds = checkedSelections.map(selection => selection.testcaseID);
