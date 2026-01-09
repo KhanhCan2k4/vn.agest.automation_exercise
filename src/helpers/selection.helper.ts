@@ -31,7 +31,7 @@ export class SelectionHelper {
 
     getCheckedSelectionsByLevel(selections: Selection[], levelName: string): Selection[] {
         return selections.filter((selection) =>
-            selection.level === levelName && selection.isSelected
+            selection.levelName === levelName && selection.isSelected
         );
     }
 
