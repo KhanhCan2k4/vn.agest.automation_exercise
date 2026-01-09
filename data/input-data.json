@@ -3,5 +3,7 @@
   "filterLevel": "Level 1",
   "targetFolder": "data",
   "targetTestCaseFileName": "testcases",
-  "mainTitle": "Test Case ID"
+  "targetSelectTestcaseName": "select_testcase",
+  "mainTitle": "Test Case ID",
+  "selectSymbol": "X"
 }
