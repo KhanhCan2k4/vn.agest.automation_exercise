@@ -3,10 +3,10 @@ export class TestCase {
   private _name: string;
   private _content: string;
 
-  constructor(object: any) {
-    this._id = object.id ?? "";
-    this._name = object.name ?? "";
-    this._content = object.content ?? "";
+  constructor(object?: any) {
+    this._id = object?.id ?? "";
+    this._name = object?.name ?? "";
+    this._content = object?.content ?? "";
   }
 
   public set id(value: string) {
