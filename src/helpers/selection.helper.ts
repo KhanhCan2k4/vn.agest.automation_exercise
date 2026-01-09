@@ -8,16 +8,14 @@ export class SelectionHelper {
     convertCsvToSelection(filePath: string): Selection[] {
 
         const fileContent = readFileSync(filePath, "utf-8");
-
         const selections: Selection[] = [];
-
         const csvRows = fileContent.split('\n');
         const headers = csvRows[0];
 
         csvRows.forEach((row, index) => {
             if (index != 0){
                 headers.split(',').forEach((header, index) =>{
-                    if (index != 0){
+                    if (index != 0 && row.split(',')[0]){
                         selections.push(new Selection(
                             row.split(',')[0],
                             header,
@@ -33,7 +31,7 @@ export class SelectionHelper {
 
     getCheckedSelectionsByLevel(selections: Selection[], levelName: string): Selection[] {
         return selections.filter((selection) =>
-            selection.level === levelName && selection.isSelected
+            selection.levelName === levelName && selection.isSelected
         );
     }
 

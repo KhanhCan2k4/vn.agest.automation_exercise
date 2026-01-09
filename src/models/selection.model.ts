@@ -13,7 +13,7 @@ export class Selection {
         return this._testcaseId;
     }
 
-    public get level(): string {
+    public get levelName(): string {
         return this._levelName;
     }
 
@@ -25,11 +25,19 @@ export class Selection {
         this._testcaseId = value;
     }
 
-    public set level(value: string) {
+    public set levelName(value: string) {
         this._levelName = value;
     }
 
     public set isSelected(value: boolean) {
         this._isSelected = value;
+    }
+
+    public toJSON(): object {
+        return {
+        testcaseId: this._testcaseId,
+        levelName: this._levelName,
+        isSelected: this._isSelected,
+        };
     }
 }
