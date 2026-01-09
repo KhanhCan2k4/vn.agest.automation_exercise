@@ -1,0 +1,132 @@
+[
+  {
+    "id": "TC1",
+    "name": "Register User",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Signup / Login' button\n5. Verify 'New User Signup!' is visible\n6. Enter name and email address\n7. Click 'Signup' button\n8. Verify that 'ENTER ACCOUNT INFORMATION' is visible\n9. Fill details: Title, Name, Email, Password, Date of birth\n10. Select checkbox 'Sign up for our newsletter!'\n11. Select checkbox 'Receive special offers from our partners!'\n12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number\n13. Click 'Create Account button'\n14. Verify that 'ACCOUNT CREATED!' is visible\n15. Click 'Continue' button\n16. Verify that 'Logged in as username' is visible\n17. Click 'Delete Account' button\n18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button"
+  },
+  {
+    "id": "TC2",
+    "name": "Login User with correct email and password",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Signup / Login' button\n5. Verify 'Login to your account' is visible\n6. Enter correct email address and password\n7. Click 'login' button\n8. Verify that 'Logged in as username' is visible\n9. Click 'Delete Account' button\n10. Verify that 'ACCOUNT DELETED!' is visible"
+  },
+  {
+    "id": "TC3",
+    "name": "Login User with incorrect email and password",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Signup / Login' button\n5. Verify 'Login to your account' is visible\n6. Enter incorrect email address and password\n7. Click 'login' button\n8. Verify error 'Your email or password is incorrect!' is visible"
+  },
+  {
+    "id": "TC4",
+    "name": "Logout User",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Signup / Login' button\n5. Verify 'Login to your account' is visible\n6. Enter correct email address and password\n7. Click 'login' button\n8. Verify that 'Logged in as username' is visible\n9. Click 'Logout' button\n10. Verify that user is navigated to login page"
+  },
+  {
+    "id": "TC5",
+    "name": "Register User with existing email",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Signup / Login' button\n5. Verify 'New User Signup!' is visible\n6. Enter name and already registered email address\n7. Click 'Signup' button\n8. Verify error 'Email Address already exist!' is visible"
+  },
+  {
+    "id": "TC6",
+    "name": "Contact Us Form",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Contact Us' button\n5. Verify 'GET IN TOUCH' is visible\n6. Enter name, email, subject and message\n7. Upload file\n8. Click 'Submit' button\n9. Click OK button\n10. Verify success message 'Success! Your details have been submitted successfully.' is visible\n11. Click 'Home' button and verify that landed to home page successfully"
+  },
+  {
+    "id": "TC7",
+    "name": "Verify Test Cases Page",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Test Cases' button\n5. Verify user is navigated to test cases page successfully"
+  },
+  {
+    "id": "TC8",
+    "name": "Verify All Products and product detail page",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Products' button\n5. Verify user is navigated to ALL PRODUCTS page successfully\n6. The products list is visible\n7. Click on 'View Product' of first product\n8. User is landed to product detail page\n9. Verify that detail detail is visible: product name, category, price, availability, condition, brand"
+  },
+  {
+    "id": "TC9",
+    "name": "Search Product",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click on 'Products' button\n5. Verify user is navigated to ALL PRODUCTS page successfully\n6. Enter product name in search input and click search button\n7. Verify 'SEARCHED PRODUCTS' is visible\n8. Verify all the products related to search are visible"
+  },
+  {
+    "id": "TC10",
+    "name": "Verify Subscription in home page",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Scroll down to footer\n5. Verify text 'SUBSCRIPTION'\n6. Enter email address in input and click arrow button\n7. Verify success message 'You have been successfully subscribed!' is visible"
+  },
+  {
+    "id": "TC11",
+    "name": "Verify Subscription in Cart page",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click 'Cart' button\n5. Scroll down to footer\n6. Verify text 'SUBSCRIPTION'\n7. Enter email address in input and click arrow button\n8. Verify success message 'You have been successfully subscribed!' is visible"
+  },
+  {
+    "id": "TC12",
+    "name": "Add Products in Cart",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click 'Products' button\n5. Hover over first product and click 'Add to cart'\n6. Click 'Continue Shopping' button\n7. Hover over second product and click 'Add to cart'\n8. Click 'View Cart' button\n9. Verify both products are added to Cart\n10. Verify their prices, quantity and total price"
+  },
+  {
+    "id": "TC13",
+    "name": "Verify Product quantity in Cart",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click 'View Product' for any product on home page\n5. Verify product detail is opened\n6. Increase quantity to 4\n7. Click 'Add to cart' button\n8. Click 'View Cart' button\n9. Verify that product is displayed in cart page with exact quantity"
+  },
+  {
+    "id": "TC14",
+    "name": "Place Order",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Add products to cart\n5. Click 'Cart' button\n6. Verify that cart page is displayed\n7. Click Proceed To Checkout\n8. Click 'Register / Login' button \n9. Fill all details in Signup and create account\n10. Verify 'ACCOUNT CREATED!' and click 'Continue' button\n11. Verify ' Logged in as username' at top\n12.Click 'Cart' button\n13. Click 'Proceed To Checkout' button\n14. Verify Address Details and Review Your Order\n15. Enter description in comment text area and click 'Place Order'\n16. Enter payment details: Name on Card, Card Number, CVC, Expiration date\n17. Click 'Pay and Confirm Order' button\n18. Verify success message 'Your order has been placed successfully!'\n19. Click 'Delete Account' button\n20. Verify 'ACCOUNT DELETED!' and click 'Continue' button"
+  },
+  {
+    "id": "TC15",
+    "name": "Place Order",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click 'Signup / Login' button \n5. Fill all details in Signup and create account\n6. Verify 'ACCOUNT CREATED!' and click 'Continue' button\n7. Verify ' Logged in as username' at top\n8. Add products to cart\n9. Click 'Cart' button\n10. Verify that cart page is displayed\n11. Click Proceed To Checkout\n12. Verify Address Details and Review Your Order\n13. Enter description in comment text area and click 'Place Order'\n14. Enter payment details: Name on Card, Card Number, CVC, Expiration date\n15. Click 'Pay and Confirm Order' button\n16. Verify success message 'Your order has been placed successfully!'\n17. Click 'Delete Account' button\n18. Verify 'ACCOUNT DELETED!' and click 'Continue' button"
+  },
+  {
+    "id": "TC16",
+    "name": "Place Order",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click 'Signup / Login' button \n5. Fill email, password and click 'Login' button\n6. Verify 'Logged in as username' at top\n7. Add products to cart\n8. Click 'Cart' button\n9. Verify that cart page is displayed\n10. Click Proceed To Checkout\n11. Verify Address Details and Review Your Order\n12. Enter description in comment text area and click 'Place Order'\n13. Enter payment details: Name on Card, Card Number, CVC, Expiration date\n14. Click 'Pay and Confirm Order' button\n15. Verify success message 'Your order has been placed successfully!'\n16. Click 'Delete Account' button\n17. Verify 'ACCOUNT DELETED!' and click 'Continue' button"
+  },
+  {
+    "id": "TC17",
+    "name": "Remove Products From Cart",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Add products to cart\n5. Click 'Cart' button\n6. Verify that cart page is displayed\n7. Click 'X' button corresponding to particular product\n8. Verify that product is removed from the cart"
+  },
+  {
+    "id": "TC18",
+    "name": "View Category Products",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that categories are visible on left side bar\n4. Click on 'Women' category\n5. Click on any category link under 'Women' category, for example: Dress\n6. Verify that category page is displayed and confirm text 'WOMEN - TOPS PRODUCTS'\n7. On left side bar, click on any sub-category link of 'Men' category\n8. Verify that user is navigated to that category page"
+  },
+  {
+    "id": "TC19",
+    "name": "View & Cart Brand Products",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Click on 'Products' button\n4. Verify that Brands are visible on left side bar\n5. Click on any brand name\n6. Verify that user is navigated to brand page and brand products are displayed\n7. On left side bar, click on any other brand link\n8. Verify that user is navigated to that brand page and can see products"
+  },
+  {
+    "id": "TC20",
+    "name": "Search Products and Verify Cart After Login",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Click on 'Products' button\n4. Verify user is navigated to ALL PRODUCTS page successfully\n5. Enter product name in search input and click search button\n6. Verify 'SEARCHED PRODUCTS' is visible\n7. Verify all the products related to search are visible\n8. Add those products to cart\n9. Click 'Cart' button and verify that products are visible in cart\n10. Click 'Signup / Login' button and submit login details\n11. Again, go to Cart page\n12. Verify that those products are visible in cart after login as well"
+  },
+  {
+    "id": "TC21",
+    "name": "Add review on product",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Click on 'Products' button\n4. Verify user is navigated to ALL PRODUCTS page successfully\n5. Click on 'View Product' button\n6. Verify 'Write Your Review' is visible\n7. Enter name, email and review\n8. Click 'Submit' button\n9. Verify success message 'Thank you for your review.'"
+  },
+  {
+    "id": "TC22",
+    "name": "Add to cart from Recommended items",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Scroll to bottom of page\n4. Verify 'RECOMMENDED ITEMS' are visible\n5. Click on 'Add To Cart' on Recommended product\n6. Click on 'View Cart' button\n7. Verify that product is displayed in cart page"
+  },
+  {
+    "id": "TC23",
+    "name": "Verify address details in checkout page",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Click 'Signup / Login' button\n5. Fill all details in Signup and create account\n6. Verify 'ACCOUNT CREATED!' and click 'Continue' button\n7. Verify ' Logged in as username' at top\n8. Add products to cart\n9. Click 'Cart' button\n10. Verify that cart page is displayed\n11. Click Proceed To Checkout\n12. Verify that the delivery address is same address filled at the time registration of account\n13. Verify that the billing address is same address filled at the time registration of account\n14. Click 'Delete Account' button\n15. Verify 'ACCOUNT DELETED!' and click 'Continue' button"
+  },
+  {
+    "id": "TC24",
+    "name": "Download Invoice after purchase order",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Add products to cart\n5. Click 'Cart' button\n6. Verify that cart page is displayed\n7. Click Proceed To Checkout\n8. Click 'Register / Login' button \n9. Fill all details in Signup and create account\n10. Verify 'ACCOUNT CREATED!' and click 'Continue' button\n11. Verify ' Logged in as username' at top\n12.Click 'Cart' button\n13. Click 'Proceed To Checkout' button\n14. Verify Address Details and Review Your Order\n15. Enter description in comment text area and click 'Place Order'\n16. Enter payment details: Name on Card, Card Number, CVC, Expiration date\n17. Click 'Pay and Confirm Order' button\n18. Verify success message 'Your order has been placed successfully!'\n19. Click 'Download Invoice' button and verify invoice is downloaded successfully.\n20. Click 'Continue' button\n21. Click 'Delete Account' button\n22. Verify 'ACCOUNT DELETED!' and click 'Continue' button"
+  },
+  {
+    "id": "TC25",
+    "name": "Verify Scroll Up using 'Arrow' button and Scroll Down functionality",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Scroll down page to bottom\n5. Verify 'SUBSCRIPTION' is visible\n6. Click on arrow at bottom right side to move upward\n7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen"
+  },
+  {
+    "id": "TC26",
+    "name": "Verify Scroll Up without 'Arrow' button and Scroll Down functionality",
+    "content": "1. Launch browser\n2. Navigate to url 'http://automationexercise.com'\n3. Verify that home page is visible successfully\n4. Scroll down page to bottom\n5. Verify 'SUBSCRIPTION' is visible\n6. Scroll up page to top\n7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen"
+  }
+]

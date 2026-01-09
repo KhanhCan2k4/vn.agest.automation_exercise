@@ -1,0 +1,23 @@
+import test from "playwright/test";
+import inputData from "../data/input-data.json" assert { type: "json" };
+import { TestCasesPage } from "../src/pages/testcases.page.ts";
+import { FileHelper } from "../src/helpers/FileHelper.ts";
+
+test("Track testcases", async ({ page }) => {
+  const testCasePage = new TestCasesPage(page);
+  await testCasePage.goto();
+
+  const testCaseList = await testCasePage.getTestCaseList();
+
+  const fileHelper = new FileHelper(inputData.targetFolder);
+
+  fileHelper.writeToFile(
+    inputData.targetTestCaseFileName + ".json",
+    testCaseList
+  );
+
+  fileHelper.writeToFile(inputData.targetTestCaseFileName + ".csv", [
+    [inputData.mainTitle, ...inputData.levels],
+    ...testCaseList.map((tc) => [tc.id]),
+  ]);
+});
