@@ -1,7 +1,7 @@
 import test from "playwright/test";
-import inputData from "../data/input-data.json" assert { type: "json" };
-import { TestCasesPage } from "../src/pages/testcases.page.ts";
-import { FileHelper } from "../src/helpers/FileHelper.ts";
+import inputData from "../data/input-data.json";
+import { TestCasesPage } from "../src/pages/testcases.page";
+import { FileHelper } from "../src/helpers/file.helper";
 
 test("Track testcases", async ({ page }) => {
   const testCasePage = new TestCasesPage(page);
