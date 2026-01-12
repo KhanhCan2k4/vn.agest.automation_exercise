@@ -1,4 +1,4 @@
-import test from "playwright/test";
+import test, { expect } from "playwright/test";
 import inputData from "../data/input-data.json";
 import { TestCasesPage } from "../src/pages/testcases.page";
 import { FileHelper } from "../src/helpers/file.helper";
@@ -20,4 +20,6 @@ test("Track testcases", async ({ page }) => {
     [inputData.mainTitle, ...inputData.levels],
     ...testCaseList.map((tc) => [tc.id]),
   ]);
+
+  expect(testCaseList.length).toBeGreaterThan(0);
 });
